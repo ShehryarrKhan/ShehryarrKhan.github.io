@@ -4312,6 +4312,12 @@ form textarea:required:valid {
   }
 }
 
+/* logo turns white in dark mode */
+[color-scheme="dark"] .mxd-logo__image {
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
+
 .mxd-logo__text {
   font: normal var(--fw-medium) 1.9rem/1.1 var(--_font-accent);
   letter-spacing: normal;
